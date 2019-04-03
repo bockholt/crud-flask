@@ -2,10 +2,11 @@
 Crud in Flask for Educational Purposes
 
 # Install
-virtualenv -p python3 venv-crud-flask
-pip install -r requirements
-source venv-crud-flask/bin/activate
+  1. virtualenv -p python3 venv-crud-flask
+  2. pip install -r requirements
+  3. source venv-crud-flask/bin/activate
 
 # Run
+```python
 python server.py
-
+```
