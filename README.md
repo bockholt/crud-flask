@@ -8,5 +8,5 @@ Crud in Flask for Educational Purposes
 
 # Run
 ```python
-python server.py
+(venv-crud-flask) python server.py
 ```
