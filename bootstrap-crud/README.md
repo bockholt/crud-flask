@@ -1,4 +1,4 @@
-# CRUD in flask with some CoolAdmin Bootstrap 4.1 Admin Dashboard Template
+# CRUD in flask with Bootstrap
   Small example for educational purposes
   
 # Environment
