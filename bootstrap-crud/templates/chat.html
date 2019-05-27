@@ -1,0 +1,47 @@
+{% from 'macro_template.html' import macro_template %}
+
+{% set section_content %}
+
+<div class="col">
+    <div class="card">
+        <div class="card-header">
+            <strong>Chat</strong> Realtime
+        </div>
+        <!-- <form action="" method="POST" class="form-horizontal"> -->
+            <div class="card-body card-block" id="chat-board">
+                            <div class="row form-group">
+                                <div class="col col-md-1">
+                                    <label for="hf-email" class=" form-control-label">&lt;&lt;Nome&gt;&gt;</label>
+                                </div>
+                <div class="col col-md">
+                                    <label for="hf-email" class=" form-control-label">conteudo</label>
+                                </div>
+                            </div>
+
+                    </div>
+                    <div class="card-body card-block">
+                        <div class="row form-group">
+                                <input type="hidden" class="username" placeholder="User Name"/>
+                                <div class="col">
+                                    <input type="email" id="hf-email"  placeholder="Text to input..." class="form-control">
+                                </div>
+                            </div>
+                    </div>
+                    <div class="card-footer">
+                        <button onclick="send_info()" class="btn btn-primary btn-sm">
+                            <i class="fa fa-dot-circle-o"></i> Submit
+                        </button>
+                        <button onclick="location.href='/'" type="back" class="btn btn-danger btn-sm">
+                            <i class="fa fa-ban"></i> Reset
+                        </button>
+                    </div>
+                   <!-- </form> -->
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.min.js"></script>
+<script src="static/js/chat.js"></script>
+
+{% endset %}
+
+
+{{ macro_template(section_content) }}
